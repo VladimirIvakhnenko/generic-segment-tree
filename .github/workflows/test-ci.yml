@@ -11,5 +11,9 @@ jobs:
         with:
           distribution: temurin
           java-version: 17
-          
+
+      - name: Add permisions 
+        run: chmod +x gradlew
+
+      - name: Run tests
       - run: ./gradlew test --no-daemon
